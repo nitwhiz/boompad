@@ -1,0 +1,5 @@
+@font-face {
+	font-family: 'LCDBOLD';
+	src: url('../assets/lcdbold/LCDBOLD.eot');
+	src: local('LCDBOLD'), url('../assets/lcdbold/LCDBOLD.woff') format('woff'), url('../assets/lcdbold/LCDBOLD.ttf') format('truetype');
+}

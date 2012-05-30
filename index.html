@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta property="og:locale" content="de_DE">
+	<meta property="og:url" content="http://daintycode.de/projects/boompad/">
+	<meta property="og:title" content="Boom!Pad">
+	<meta property="og:description" content="A simple sampler in JS.">
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://daintycode.de/projects/boompad/assets/og.png">
+
+	<title>Boom!Pad 1.1</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.color.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.shadow.js"></script>
+	
+	<script type="text/javascript" src="js/recorder.js"></script>
+	<script type="text/javascript" src="js/boompad.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="boompad">
+			<div id="displays">
+				<div class="display-wrapper">
+					<div class="display-button-wrapper"><div class="display-button" id="display1-button-left">&#9668;</div></div>
+					<div class="display" id="disp1">
+						---&nbsp;---
+					</div>
+					<div class="display-button-wrapper"><div class="display-button" id="display1-button-right">&#9658;</div></div>
+				</div>
+				<div class="display-wrapper">
+					<div class="display-button-wrapper"><div class="display-button" id="display2-button-left">&#9668;</div></div>
+					<div class="display" id="disp2">
+						---&nbsp;---
+					</div>
+					<div class="display-button-wrapper"><div class="display-button" id="display2-button-right">&#9658;</div></div>
+				</div>
+			</div>
+			<div id="buttons-pad-wrapper">
+				<div id="buttons">
+					<div class="button-wrapper"><div id="s0" class="button slot">A</div></div>
+					<div class="button-wrapper"><div id="k7" class="button sample">7<span></span></div></div>
+					<div class="button-wrapper"><div id="k8" class="button sample">8<span></span></div></div>
+					<div class="button-wrapper"><div id="k9" class="button sample">9<span></span></div></div>
+					
+					<div class="button-wrapper"><div id="s1" class="button slot">S</div></div>
+					<div class="button-wrapper"><div id="k4" class="button sample">4<span></span></div></div>
+					<div class="button-wrapper"><div id="k5" class="button sample">5<span></span></div></div>
+					<div class="button-wrapper"><div id="k6" class="button sample">6<span></span></div></div>
+					
+					<div class="button-wrapper"><div id="s2" class="button slot">D</div></div>
+					<div class="button-wrapper"><div id="k1" class="button sample">1<span></span></div></div>
+					<div class="button-wrapper"><div id="k2" class="button sample">2<span></span></div></div>
+					<div class="button-wrapper"><div id="k3" class="button sample">3<span></span></div></div>
+					
+					<div class="button-wrapper"><div id="s3" class="button slot">F</div></div>
+					<div class="button-wrapper"><div id="s4" class="button slot">G</div></div>
+					<div class="button-wrapper"><div id="s5" class="button slot">H</div></div>
+					<div class="button-wrapper"><div id="s6" class="button slot">J</div></div>
+				</div>
+				<div id="pad">
+					<canvas width="400" height="400">Huh?</canvas>
+				</div>
+			</div>
+			<div id="controls">
+				<div class="control-wrapper"><div class="control" id="ctrl-1">-</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-erase-current">EC</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-erase-all">EA</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-record">REC</div></div>
+				
+				<div class="control-wrapper"><div class="control" id="ctrl-5">-</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-6">-</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-7">-</div></div>
+				<div class="control-wrapper"><div class="control" id="ctrl-8">-</div></div>
+			</div>
+			
+		</div>
+		
+		<footer><b>[this is an experiment with html5-features which do not work in every browser yet!]</b> <b><a href="http://www.youtube.com/watch?v=lcjG4YoCVQA" target="_blank">[watch a little how-to]</a></b> <b>[credits]</b> idea & code by <a target="_blank" href="http://daintycode.de/">daintycode (andy)</a> | samples by <a target="_blank" href="http://soundcloud.com/subkaofficial">SuBKA (bene)</a>&nbsp;</footer>
+		
+		<div id="overlay">
+			<h1>Boom!Pad 1.1</h1>
+		</div>
+	</div>
+	<script type="text/javascript" src="../clicky.js"></script>
+</body>
+</html>

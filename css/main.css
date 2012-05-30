@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Electrolize|Wellfleet);
+@import url(font_lcdbold.css);
+
+html, body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:'Electrolize', sans-serif;
+	color:white;
+	background-color:white;
+	background-image:url('../assets/background.gif');
+	cursor:default;
+}
+
+a {
+	color:#999;
+}
+
+#wrapper {
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+#boompad {
+	position:absolute;
+	width:938px;
+	height:590px;
+	top:50%;
+	left:50%;
+	margin:-295px 0 0 -469px;
+	background-color:#141414;
+	border:2px solid #202020;
+	border-radius:3px;
+	box-shadow:0 3px 0 black, inset 0 0 5px black;
+}
+
+#displays {
+	width:100%;
+	height:75px;
+	overflow:hidden;
+	clear:both;
+}
+
+#displays .display-wrapper {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	float:left;
+	width:50%;
+	height:45px;
+	margin:15px 0;
+	padding-left:89px;
+	overflow:hidden;
+}
+
+#displays .display-button-wrapper {
+	float:left;
+	margin:5px 0;
+	height:35px;
+	width:35px;
+}
+
+#displays .display-button {
+	width:100%;
+	height:33px;
+	text-align:center;
+	line-height:33px;
+	font-size:20px;
+	color:#777;
+	background-color:#555;
+	box-shadow:0 3px 0 #333;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+#displays .display {
+	float:left;
+	margin:0 15px;
+	width:190px;
+	height:45px;
+	font-size:30px;
+	line-height:45px;
+	font-family:'LCDBOLD', sans-serif;
+	font-weight:bold;
+	color:#c40000;
+	text-shadow:0 0 5px #c40000;
+	text-align:center;
+	background-color:#070707;
+}
+
+#buttons {
+	float:left;
+	width:425px;
+	height:440px;
+	margin:0 30px;
+}
+
+#buttons .button-wrapper {
+	float:left;
+	width:95px;
+	height:98px;
+	margin:0 15px 15px 0;
+}
+
+#buttons .button-wrapper:nth-child(4n) {
+	margin-right:0;
+}
+
+#buttons .button-wrapper:nth-child(12) ~ .button-wrapper {
+	margin-bottom:0;
+}
+
+#buttons .button-wrapper .button {
+	width:100%;
+	height:100%;
+	text-align:center;
+	border-radius:3px;
+}
+
+#buttons .button-wrapper .slot {
+	color:#888;
+	background-color:#666;
+	box-shadow:0 3px 0 #444;
+	font-size:75px;
+	line-height:100px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#buttons .button-wrapper .sample {
+	color:#777;
+	background-color:#555;
+	box-shadow:0 3px 0 #333;
+	font-size:60px;
+	line-height:75px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#buttons .button-wrapper .sample span {
+	display:block;
+	line-height:13px;
+	font-size:12px;
+	font-weight:normal;
+	margin:0 5px 0 5px;
+	max-width:86px;
+	overflow:hidden;
+}
+
+#pad {
+	float:left;
+	width:400px;
+	height:400px;
+	margin:9px 0;
+	background-color:#070707;
+	border-top:12.5px solid #171717;
+	border-right:12.5px solid #202020;
+	border-bottom:12.5px solid #202020;
+	border-left:12.5px solid #171717;
+}
+
+#pad canvas {
+	cursor:crosshair;
+}
+
+#controls {
+	clear:both;
+	width:100%;
+	height:75px;
+	overflow:hidden;
+}
+
+#controls .control-wrapper {
+	float:left;
+	width:95px;
+	height:35px;
+	margin:15px 15px 0 0;
+}
+
+#controls .control-wrapper:nth-child(1) {
+	margin-left:30px;
+}
+
+#controls .control-wrapper:nth-child(5) {
+	margin-left:15px;
+}
+
+#controls .control-wrapper:last-child {
+	margin-right:0;
+}
+
+#controls .control-wrapper .control {
+	width:100%;
+	height:100%;
+	font-size:25px;
+	line-height:35px;
+	text-align:center;
+	color:#777;
+	background-color:#555;
+	box-shadow:0 3px 0 #333;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+footer {
+	position:absolute;
+	top:100%;
+	width:100%;
+	color:#888;
+	text-align:right;
+	line-height:20px;
+	font-size:15px;
+	font-family:Tahoma, sans-serif;
+	margin-top:-25px;
+	z-index:999;
+}
+
+#overlay {
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	background-color:rgba(33, 33, 33, .9);
+}
+
+#overlay h1 {
+	position:absolute;
+	margin:-62.5px 0 0 -332.5px;
+	padding:0;
+	top:50%;
+	left:50%;
+	font-size:100px;
+	text-shadow:3px 3px 0 #111;
+	color:#888;
+	font-family:'Wellfleet';
+}
